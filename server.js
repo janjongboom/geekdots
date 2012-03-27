@@ -18,7 +18,7 @@ var server = http.createServer(function(req, res) {
     
 });
 
-server.listen(process.env.C9_PORT);
+server.listen(process.env.PORT);
 var io = require("socket.io").listen(server);
 io.set("log level", 2);
 
